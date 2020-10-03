@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  background-size: 400%;
+  background-position: 0%;
+  animation: textColorAnimation 5s alternate infinite;
+  color: rgba(0,0,0,0.1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
+#generation {
+  letter-spacing: 1.5px;
+}
+
+#generation-output {
+  width: 60ch;
+  overflow-wrap: break-word;
+  height: 100%;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: whitesmoke;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.16);
+  font-family: 'Open Sans', sans-serif;
+  padding: 1rem;
+}
+
+@keyframes textColorAnimation {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+#start-sim-button {
+  margin-top: 1rem;
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  color: black;
+  letter-spacing: 1.5px;
+  font-size: large;
+  background: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.16);
+}
+
+#sim-canvas {
+  background: #f7f7f7;
+  border-radius: 10px;
+  width: 500px;
+}
+
+#container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
